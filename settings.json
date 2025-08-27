@@ -56,7 +56,11 @@
     "button": false
   },
   "terminal": {
-    "button": false
+    "button": false,
+    "font_size": 13,
+    "toolbar": {
+      "breadcrumbs": false
+    }
   },
   "debugger": {
     "button": false

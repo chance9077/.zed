@@ -11,7 +11,7 @@
       "space b o": "pane::CloseOtherItems",
       "space x x": "diagnostics::Deploy",
       "space /": "pane::DeploySearch",
-      "ctrl-/": "workspace::ToggleBottomDock",
+      "ctrl-/": "terminal_panel::ToggleFocus",
       "ctrl-w d": "pane::CloseAllItems",
       "ctrl-s": "workspace::Save",
       "g r": "editor::FindAllReferences",
@@ -57,7 +57,7 @@
     }
   },
   {
-    "context": "(Editor && vim_mode == normal) || (ProjectPanel && not_editing)",
+    "context": "(Editor && vim_mode == normal) || (ProjectPanel && not_editing) || Terminal",
     "bindings": {
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-h": "workspace::ActivatePaneLeft",
