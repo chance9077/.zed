@@ -10,7 +10,9 @@
       "space b d": "pane::CloseActiveItem",
       "space b o": "pane::CloseOtherItems",
       "space x x": "diagnostics::Deploy",
+      "space g g": "git_panel::ToggleFocus",
       "space /": "pane::DeploySearch",
+      "space e": "project_panel::ToggleFocus",
       "ctrl-/": "terminal_panel::ToggleFocus",
       "ctrl-w d": "pane::CloseAllItems",
       "ctrl-s": "workspace::Save",
@@ -53,18 +55,18 @@
       "p": "project_panel::Paste",
       "x": "project_panel::Cut",
       "shift-a": "project_panel::NewDirectory",
-      "shift-O": "project_panel::RevealInFileManager"
+      "shift-O": "project_panel::RevealInFileManager",
+      "space e": "workspace::ToggleLeftDock",
+      "space g g": "git_panel::ToggleFocus"
     }
   },
   {
-    "context": "(Editor && vim_mode == normal) || (ProjectPanel && not_editing) || Terminal",
+    "context": "(Editor && vim_mode == normal) || (ProjectPanel && not_editing) || Terminal || GitPanel",
     "bindings": {
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-j": "workspace::ActivatePaneDown",
-      "ctrl-k": "workspace::ActivatePaneUp",
-      "space e": "workspace::ToggleLeftDock",
-      "space g g": "git_panel::ToggleFocus"
+      "ctrl-k": "workspace::ActivatePaneUp"
     }
   }
 ]
