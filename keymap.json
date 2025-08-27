@@ -1,0 +1,66 @@
+[
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePreviousItem",
+      "space v": "pane::SplitRight",
+      "space s": "pane::SplitHorizontal",
+      "space space": "file_finder::Toggle",
+      "space b d": "pane::CloseActiveItem",
+      "space b o": "pane::CloseOtherItems",
+      "space /": "pane::DeploySearch",
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "ctrl-w d": "pane::CloseAllItems",
+      "ctrl-s": "workspace::Save",
+      "g r": "editor::FindAllReferences"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "alt-h": "vim::Left",
+      "alt-l": "vim::Right",
+      "alt-j": "vim::Down",
+      "alt-k": "vim::Up",
+      "ctrl-s": "workspace::Save"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-/": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "d": "project_panel::Trash",
+      "r": "project_panel::Rename",
+      "y": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "x": "project_panel::Cut",
+      "shift-a": "project_panel::NewDirectory",
+      "shift-O": "project_panel::RevealInFileManager"
+    }
+  },
+  {
+    "context": "(Editor && vim_mode == normal) || (ProjectPanel && not_editing)",
+    "bindings": {
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "space e": "workspace::ToggleLeftDock",
+      "space g g": "git_panel::ToggleFocus"
+    }
+  }
+]
