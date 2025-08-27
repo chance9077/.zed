@@ -9,11 +9,15 @@
       "space space": "file_finder::Toggle",
       "space b d": "pane::CloseActiveItem",
       "space b o": "pane::CloseOtherItems",
+      "space x x": "diagnostics::Deploy",
       "space /": "pane::DeploySearch",
       "ctrl-/": "workspace::ToggleBottomDock",
       "ctrl-w d": "pane::CloseAllItems",
       "ctrl-s": "workspace::Save",
-      "g r": "editor::FindAllReferences"
+      "g r": "editor::FindAllReferences",
+      "] e": "editor::GoToDiagnostic",
+      "[ e": "editor::GoToPreviousDiagnostic",
+      "shift-enter": "zed::ToggleFullScreen"
     }
   },
   {
